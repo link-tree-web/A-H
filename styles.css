@@ -11,7 +11,7 @@
 }
 
 *{box-sizing:border-box; margin:0; padding:0;}
-html,body{ background:var(--ink-green); }
+html,body{ background:var(--ink-green); overflow-x:hidden; width:100%; }
 
 body{
   color:var(--ivory);
@@ -33,6 +33,7 @@ body{
   opacity:0;
   animation:rise 0.9s ease forwards;
   position:relative;
+  overflow:hidden;
 }
 @keyframes rise{
   from{ opacity:0; transform:translateY(10px); }
